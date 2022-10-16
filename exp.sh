@@ -1,7 +1,3 @@
-python trial.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine code-davinci-002
-# python cot_play.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-002
-
-
 #### AQUA
 # ## zeroshot
 # python -u cot.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-001 --task aqua --print --prompt zeroshot --maxlen 64 > logs/aqua_text001_zeroshot.log

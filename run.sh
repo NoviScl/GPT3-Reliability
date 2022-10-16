@@ -1,9 +1,7 @@
-## tmux 21
-
 for dataset in bbq
 do 
     python -u cot.py \
-    --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+    --apikey  \
     --engine code-davinci-002 \
     --task $dataset \
     --prompt_source bbq_ambig_pro \
@@ -18,7 +16,7 @@ done
 # for dataset in nq
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -32,7 +30,7 @@ done
 # for dataset in mmlu_all_closed_book
 # do 
 #     python -u cot_mmlu.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -47,7 +45,7 @@ done
 # for dataset in hans_sub_non hans_con_ent hans_con_non hans_lex_ent hans_lex_non hans_sub_ent 
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source mnli_half_bias \
@@ -61,7 +59,7 @@ done
 # for dataset in hans_sub_non hans_con_ent hans_con_non hans_lex_ent hans_lex_non hans_sub_ent 
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source mnli_full_bias \
@@ -77,7 +75,7 @@ done
 # for dataset in mnli-hans-format
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source mnli_half_bias \
@@ -92,7 +90,7 @@ done
 # for dataset in mnli-hans-format
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source mnli_full_bias \
@@ -107,7 +105,7 @@ done
 # for dataset in mmlu_astronomy mmlu_nutrition mmlu_policy
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine davinci \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -123,7 +121,7 @@ done
 # for dataset in mmlu_astronomy_top10_qonly mmlu_nutrition_top10_qonly mmlu_policy_top10_qonly
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine davinci \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -138,7 +136,7 @@ done
 # for dataset in mmlu_astronomy_top10_qonly mmlu_nutrition_top10_qonly mmlu_policy_top10_qonly
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -154,7 +152,7 @@ done
 # for dataset in zsre_orig_full
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -167,7 +165,7 @@ done
 # for dataset in contriever_top5_triviaqa
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -179,8 +177,8 @@ done
 
 # for dataset in contriever_top5_nq_pqa  contriever_top5_squad_pqa  contriever_top5_triviaqa_pqa
 # do 
-#     python -u cot2.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     python -u cot.py \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -193,7 +191,7 @@ done
 # for dataset in nq hotpotqa
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -211,7 +209,7 @@ done
 # for dataset in triviaqa
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -226,7 +224,7 @@ done
 # for dataset in hotpotqa triviaqa
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source nq \
@@ -242,7 +240,7 @@ done
 # for dataset in triviaqa nq
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine text-davinci-001 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -257,7 +255,7 @@ done
 # for dataset in triviaqa nq
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine text-curie-001 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -273,7 +271,7 @@ done
 # for dataset in triviaqa nq
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -288,7 +286,7 @@ done
 # for dataset in triviaqa nq
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -303,7 +301,7 @@ done
 # for dataset in triviaqa nq
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -319,7 +317,7 @@ done
 # for dataset in triviaqa nq
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -335,7 +333,7 @@ done
 # for dataset in contriever_top10_triviaqa
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -349,7 +347,7 @@ done
 # for dataset in fever_edited_test fever_orig_irrelevant fever_edited_irrelevant
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -364,7 +362,7 @@ done
 # for dataset in fever_edited_test_all_balance fever_orig_irrelevant_all_balance fever_edited_irrelevant_all_balance
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -379,7 +377,7 @@ done
 # for dataset in bbq
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source bbq_ambig_neutral \
@@ -393,7 +391,7 @@ done
 # for dataset in bbq
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source bbq_ambig_pro \
@@ -408,7 +406,7 @@ done
 # for dataset in bbq
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source bbq_ambig_anti \
@@ -423,7 +421,7 @@ done
 # for dataset in winobias_anti_type2 winobias_pro_type2
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source winobias_balanced_prompt \
@@ -438,7 +436,7 @@ done
 # for dataset in winobias_anti_type1 winobias_pro_type1 winobias_anti_type2 winobias_pro_type2
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source winobias_balanced_prompt_pro_at_end \
@@ -453,7 +451,7 @@ done
 # for dataset in winobias_anti_type1 winobias_pro_type1 winobias_anti_type2 winobias_pro_type2
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source winobias_balanced_prompt_anti_at_end \
@@ -467,7 +465,7 @@ done
 # for dataset in winobias_anti_type1 winobias_pro_type1 winobias_anti_type2 winobias_pro_type2
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source winobias_anti_type2 \
@@ -482,8 +480,8 @@ done
 
 # for dataset in qqp
 # do 
-#     python -u cot2.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     python -u cot.py \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -497,7 +495,7 @@ done
 # for dataset in hans_sub_non
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source mnli \
@@ -512,7 +510,7 @@ done
 # for dataset in hans_sub_non hans_con_ent hans_con_non hans_lex_ent hans_lex_non hans_sub_ent 
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source mnli \
@@ -525,8 +523,8 @@ done
 
 # for dataset in hans_sub_ent hans_sub_non hans_con_ent hans_con_non hans_lex_ent hans_lex_non 
 # do 
-#     python -u cot2.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     python -u cot.py \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source mnli \
@@ -541,7 +539,7 @@ done
 # for dataset in squad_amazon
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -555,7 +553,7 @@ done
 # for dataset in IIDPromptMRQASQuADDev
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -570,7 +568,7 @@ done
 # for dataset in qnli qqp
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -585,7 +583,7 @@ done
 # for dataset in mnli-mm
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -598,7 +596,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task subqa-all10 \
 # --prompt_source subqa-all10 \
@@ -611,7 +609,7 @@ done
 # for dataset in subs-nq-PmQAm-codeD002 subs-nq-PQA-codeD002 
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -625,7 +623,7 @@ done
 # for dataset in subs-nq-QA-codeD002 subs-nq-QAm-codeD002
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -639,7 +637,7 @@ done
 # for dataset in MinPromptMRQASQuADDev
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine code-davinci-002 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -653,7 +651,7 @@ done
 # for dataset in mrqa-nq-train mrqa-squad-train
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine text-davinci-001 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -667,7 +665,7 @@ done
 # for dataset in mrqa-nq-train mrqa-squad-train
 # do 
 #     python -u cot.py \
-#     --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+#     --apikey  \
 #     --engine text-curie-001 \
 #     --task $dataset \
 #     --prompt_source $dataset \
@@ -678,7 +676,7 @@ done
 # done
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task subqa-sub1 \
 # --prompt_source subqa-sub1 \
@@ -690,7 +688,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task subqa-sub2 \
 # --prompt_source subqa-sub2 \
@@ -702,7 +700,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task hotpotqa-train \
 # --prompt_source hotpotqa-train \
@@ -713,7 +711,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task ambigqa \
 # --prompt_source ambigqa \
@@ -723,7 +721,7 @@ done
 # --shots 16 > logs/ambigqa_code002_16shot.log
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task ambigqa \
 # --prompt_source hotpotqa \
@@ -735,7 +733,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task grailqa \
 # --prompt_source grailqa \
@@ -747,7 +745,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task cfq-mcd1 \
 # --prompt_source cfq-mcd1 \
@@ -758,7 +756,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task cfq-mcd2 \
 # --prompt_source cfq-mcd2 \
@@ -770,7 +768,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task cfq-mcd3 \
 # --prompt_source cfq-mcd3 \
@@ -782,7 +780,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task timeqa-human-hard \
 # --prompt_source timeqa-human-hard \
@@ -794,7 +792,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task hotpotqa \
 # --prompt_source hotpotqa \
@@ -805,7 +803,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task triviaqa \
 # --prompt_source triviaqa \
@@ -816,7 +814,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine code-davinci-002 \
 # --task webq \
 # --prompt_source webq \
@@ -827,7 +825,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine text-davinci-002 \
 # --task nq \
 # --prompt_source nq \
@@ -840,7 +838,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine text-davinci-001 \
 # --task triviaqa \
 # --prompt_source triviaqa \
@@ -853,7 +851,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine text-davinci-002 \
 # --task triviaqa \
 # --prompt_source triviaqa \
@@ -866,7 +864,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine text-davinci-001 \
 # --task hotpotqa \
 # --prompt_source hotpotqa \
@@ -879,7 +877,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine text-davinci-002 \
 # --task hotpotqa \
 # --prompt_source hotpotqa \
@@ -892,7 +890,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine text-davinci-001 \
 # --task squad \
 # --prompt_source squad \
@@ -905,7 +903,7 @@ done
 
 
 # python -u cot.py \
-# --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo \
+# --apikey  \
 # --engine text-davinci-002 \
 # --task squad \
 # --prompt_source squad \
@@ -919,28 +917,28 @@ done
 
 
 ## zeroshot
-# python -u cot.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-001 --task aqua --print --prompt zeroshot --maxlen 64 > logs/aqua_text001_zeroshot.log
-# python -u cot.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-002 --task aqua --print --prompt zeroshot --maxlen 64 > logs/aqua_text002_zeroshot.log
-# python -u cot.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine code-davinci-002 --task aqua --print --prompt zeroshot --maxlen 128 > logs/aqua_code002_zeroshot.log
+# python -u cot.py --apikey  --engine text-davinci-001 --task aqua --print --prompt zeroshot --maxlen 64 > logs/aqua_text001_zeroshot.log
+# python -u cot.py --apikey  --engine text-davinci-002 --task aqua --print --prompt zeroshot --maxlen 64 > logs/aqua_text002_zeroshot.log
+# python -u cot.py --apikey  --engine code-davinci-002 --task aqua --print --prompt zeroshot --maxlen 128 > logs/aqua_code002_zeroshot.log
 
 
 #### GSM8K
 # ## zeroshot
-# python -u cot2.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-001 --task gsm8k --print --prompt zeroshot --maxlen 64 --extract > logs/gsm8k_text001_zeroshot.log
-# python -u cot2.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-002 --task gsm8k --print --prompt zeroshot --maxlen 64 --extract > logs/gsm8k_text002_zeroshot.log
-# python -u cot2.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine code-davinci-002 --task gsm8k --print --prompt zeroshot-boost --maxlen 256 --extract > logs/gsm8k_code002_zeroshot.log
+# python -u cot.py --apikey  --engine text-davinci-001 --task gsm8k --print --prompt zeroshot --maxlen 64 --extract > logs/gsm8k_text001_zeroshot.log
+# python -u cot.py --apikey  --engine text-davinci-002 --task gsm8k --print --prompt zeroshot --maxlen 64 --extract > logs/gsm8k_text002_zeroshot.log
+# python -u cot.py --apikey  --engine code-davinci-002 --task gsm8k --print --prompt zeroshot-boost --maxlen 256 --extract > logs/gsm8k_code002_zeroshot.log
 
 #### MultiArith
 # ## zeroshot
-# python -u cot.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-001 --task multiarith --print --prompt zeroshot --maxlen 64 --extract > logs/multiarith_text001_zeroshot.log
-# python -u cot.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-002 --task multiarith --print --prompt zeroshot --maxlen 64 --extract > logs/multiarith_text002_zeroshot.log
-# python -u cot.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine code-davinci-002 --task multiarith --print --prompt zeroshot --maxlen 64 --extract > logs/multiarith_code002_zeroshot.log
+# python -u cot.py --apikey  --engine text-davinci-001 --task multiarith --print --prompt zeroshot --maxlen 64 --extract > logs/multiarith_text001_zeroshot.log
+# python -u cot.py --apikey  --engine text-davinci-002 --task multiarith --print --prompt zeroshot --maxlen 64 --extract > logs/multiarith_text002_zeroshot.log
+# python -u cot.py --apikey  --engine code-davinci-002 --task multiarith --print --prompt zeroshot --maxlen 64 --extract > logs/multiarith_code002_zeroshot.log
 
 
 ### SingleEq
-# python -u cot.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-001 --task singleeq --print --prompt zeroshot --maxlen 64 --extract > logs/singleeq_text001_zeroshot.log
-# python -u cot2.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-002 --task singleeq --print --prompt zeroshot --maxlen 64 --extract > logs/singleeq_text002_zeroshot.log
-# python -u cot.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine code-davinci-002 --task singleeq --print --prompt zeroshot --maxlen 64 --extract > logs/singleeq_code002_zeroshot.log
+# python -u cot.py --apikey  --engine text-davinci-001 --task singleeq --print --prompt zeroshot --maxlen 64 --extract > logs/singleeq_text001_zeroshot.log
+# python -u cot.py --apikey  --engine text-davinci-002 --task singleeq --print --prompt zeroshot --maxlen 64 --extract > logs/singleeq_text002_zeroshot.log
+# python -u cot.py --apikey  --engine code-davinci-002 --task singleeq --print --prompt zeroshot --maxlen 64 --extract > logs/singleeq_code002_zeroshot.log
 
-# python -u cot2.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-002 --task singleeq --print --prompt zeroshot-step --maxlen 256 --extract > logs/singleeq_text002_zeroshot_step.log
-# python -u cot2.py --apikey sk-mUmScf7buhNb1ctzo8aEMAYZXaCKsdyed4WAHWlo --engine text-davinci-002 --task singleeq --print --prompt fewshot --maxlen 64 --extract > logs/singleeq_text002_fewshot.log
+# python -u cot.py --apikey  --engine text-davinci-002 --task singleeq --print --prompt zeroshot-step --maxlen 256 --extract > logs/singleeq_text002_zeroshot_step.log
+# python -u cot.py --apikey  --engine text-davinci-002 --task singleeq --print --prompt fewshot --maxlen 64 --extract > logs/singleeq_text002_fewshot.log

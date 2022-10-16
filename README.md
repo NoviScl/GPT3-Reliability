@@ -19,7 +19,7 @@ And you should always cite the original authors of these datasets if you use the
 
 ## GPT-3 Predictions
 
-We recorded and share all GPT-3 output files, which can be downloaded [from here](https://drive.google.com/file/d/1XfPbxJpVbeNwRTubyX-6NIY6b52LBtGi/view?usp=sharing). Each file contains: name of the test set, number of total examples, overall accuracy, and detailed output for all examples. In the output for each example, we include: the full prompt (i.e., exactly what feed to the model), GPT-3's prediction, the correctness of its prediction (matched with the gold reference), and in some cases we also include the probability/confidence of the model output which can be used for calibration purposes. (For the confidence, I include both the per-token probablity, as well as the LM prob of the whole answer string. More details can be found in the paper for how we obtain the confidence.)
+We recorded and share all GPT-3 output files, which can be downloaded [from here](https://drive.google.com/file/d/1Mlj8kciJzX96Sfl7iGH1M2e3V-krvOAG/view?usp=sharing). Each file contains: name of the test set, number of total examples, overall accuracy, and detailed output for all examples. In the output for each example, we include: the full prompt (i.e., exactly what feed to the model), GPT-3's prediction, the correctness of its prediction (matched with the gold reference), and in some cases we also include the probability/confidence of the model output which can be used for calibration purposes. (For the confidence, I include both the per-token probablity, as well as the LM prob of the whole answer string. More details can be found in the paper for how we obtain the confidence.)
 
 ## Questions? 
 
