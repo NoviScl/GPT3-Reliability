@@ -5,6 +5,44 @@ This is the repo that contains: 1) code to reproduce all experiment results; 2) 
 
 ## Code 
 
+### Dependencies
+
+* openai 
+* transformers (2.9.0)
+* tokenizers (0.7.0)
+
+Note that ``transformers`` and ``tokenizers`` are optional, we mainly use it to tokenizer the input text with ``GPT2Tokenizer`` in order to measure input lengths. 
+
+### Run Evaluation
+
+Once you download the datasets (introduced in the next section), you can directly start running GPT-3 evaluation with ``cot.py``. You may have to change the data paths in the first part of ``cot.py`` to read data from the correct paths. We already have the data processing and GPT-3 querying code which you don't need to change. 
+
+An example script is as follows:
+
+```bash
+# run evaluation
+for dataset in nq hotpotqa
+do 
+    python -u cot.py \
+    --apikey YOURKEY \
+    --engine code-davinci-002 \
+    --task $dataset \
+    --prompt_source $dataset \
+    --prompt_method fewshot \
+    --print \
+    --save_prob \
+    --maxlen 32 \
+    --shots 16 > logs/calibration/${dataset}_probs_code002_16shot.log
+done
+
+```
+
+* You can see the full list of supported datasets from ``subset_mappings`` in ``cot.py``. For supported datasets, you can directly specify their names/keys in ``--task`` (like ``nq`` and ``hotpotqa``). 
+* The ``--prompt_source`` argument allows you to specify where to sample the demo examples, which allows you to evaluate OOD settings where the demos come from a different dataset than the test set. 
+* The ``--save_prob`` argument will record the LM probability (i.e., confidence) of the model on the predicted answer. 
+* The ``--maxlen`` argument specifies the max length of the GPT-3 generation. If you use ``code-davinci-002``, the max sequence length (input + generation) is 8k; if you use ``text-davinci-002``, it's 2k. If your input (prompt) is very long, you will have to cut down the ``--maxlen`` for the generation, otherwise it will throw errors. 
+* The ``--shots`` argument specifies how many demos to sample as the prompt. 
+
 
 ## Data
 

@@ -446,7 +446,7 @@ def main():
     parser.add_argument('--shots', type=int, default=0, help='how many demos to use in the prompt')
     parser.add_argument('--no_unanswerable', default=False, action='store_true', help='Whether to filter out unanswerable questions in the demo')
     parser.add_argument('--label_shuffle', default=False, action='store_true', help='Whether to shuffle the gold labels')
-    parser.add_argument('--save_prob', default=False, action='store_true', help='Whether to save top token logprobs and perplexity')
+    parser.add_argument('--save_prob', default=False, action='store_true', help='Whether to save top token logprobs and confidence')
     parser.add_argument('--continue_from', type=int, default=0, help='evaluate on part of test set, starting from this index')
 
     args = parser.parse_args()
