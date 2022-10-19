@@ -88,7 +88,9 @@ If you find our work useful, please consider citing it:
    title={Prompting GPT-3 To Be Reliable},
    author={Chenglei Si and Zhe Gan and Zhengyuan Yang and Shuohang Wang and Jianfeng Wang and Jordan Boyd-Graber and Lijuan Wang},
    journal={arXiv},
-   year={2022}
+   year={2022},
+   volume={abs/2210.09150},
+   url={https://arxiv.org/abs/2210.09150}
 }
 ```
 
