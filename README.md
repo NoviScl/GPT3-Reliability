@@ -1,4 +1,4 @@
-# Prompting GPT-3 To Be Reliable 
+# Prompting GPT-3 To Be Reliable (ICLR 2023)
 
 This is the repo that contains: 1) code to reproduce all experiment results; 2) all processed datasets used in the paper; 3) the model outputs (i.e., GPT-3 generations with different prompts) for all experiments conducted in the paper. 
 
@@ -84,13 +84,13 @@ If your question is ``Can you try GPT-3 on xxx datasets/tasks for me?``, I unfor
 
 If you find our work useful, please consider citing it:
 ```bibtex
-@article{si2022prompting,
+@inproceedings{si2022prompting,
    title={Prompting GPT-3 To Be Reliable},
    author={Chenglei Si and Zhe Gan and Zhengyuan Yang and Shuohang Wang and Jianfeng Wang and Jordan Boyd-Graber and Lijuan Wang},
-   journal={arXiv},
-   year={2022},
-   volume={abs/2210.09150},
+   booktitle={International Conference on Learning Representations (ICLR)},   
+   year={2023},
    url={https://arxiv.org/abs/2210.09150}
 }
 ```
+
 
